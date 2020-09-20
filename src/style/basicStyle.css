@@ -1,0 +1,215 @@
+/* .nav-bar-outer {
+    margin-bottom: 10px;
+} */
+
+.top-nav-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(127, 109, 209);
+}
+
+.nav-item-left {
+    float: left;
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-item-right{
+    float: right;
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.active {
+    background-color: teal;
+}
+
+.search-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 25%;
+    /* margin-top: 10%; */
+    position: absolute;
+    transform: translate(50%,-50%);
+    right: 50%;
+}
+
+.search-div label {
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: Roboto,sans-serif;
+}
+.search-div input {
+    height: 30px;
+    border: 1px solid #3d3838;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 5px 0 #ccc!important;
+    font-size: 14px;
+}
+
+.search-div select {
+    height: 30px;
+    margin: 0 10px;
+    min-width: 170px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 5px 0 #ccc!important;
+}
+
+.search-div button {
+    height: 30px;
+    margin: 0 10px;
+    background-color: #3d577a;
+    color: #fff;
+}
+.btn-disabled {
+    border: 1px solid #999999 !important;
+    background-color: #cccccc !important;
+    color: #666666 !important;
+}
+.card_btn {
+    background-color: #3d577a;
+    color: #fff;
+    height: 30px;
+    margin-left: 35%;
+    min-width: 84px;
+}
+
+.background-image {
+    background-image: url(https://static.videomaker.com/wp-content/uploads/2020/01/clipper-4223871_960_720.jpg);
+    min-width: 100%;
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+body {
+    background-color: #41ac3f;
+}
+
+.movie-details {
+    position: absolute;
+    top: 30%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    min-width: 300px;
+    max-width: 300px;
+    padding: 19px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .card img {
+      width: 100%;
+      height: 450px;
+  }
+
+  .card-outer {
+      position: absolute;
+  }
+
+  .search-top {
+    top: 30%;
+  }
+
+  .container {
+      background: #ccc;
+  }
+
+  .card h4 {
+      margin-top: 0;
+  }
+
+  .card p {
+      margin-top: 0;
+  }
+
+  .card-direction {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .temp {
+    overflow: hidden;
+    white-space: normal;
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media all and (max-width: 800px) {
+      .search-div {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 36px;
+      }
+
+      .search-div input {
+          width: 100%;
+          padding: 0;
+      }
+
+      .search-div select {
+        min-width: 257px;
+        width: 100%;
+        margin: 5px 0 0;
+        padding: 0;
+
+      }
+
+      .search-div button {
+          margin: 5px 0 0;
+      }
+
+      .search-top {
+        top: 45%;
+      }
+
+      .card img {
+        height: 400px;
+      }
+
+      .card-direction {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .nav-bar-outer {
+       position: fixed;
+        width: 100%;
+        top: 0px;
+        z-index: 1000;
+    }
+  }
+
+  @media all and (max-width: 1500px) {
+
+    .search-div {
+        width: 100%;
+    }
+
+  }
